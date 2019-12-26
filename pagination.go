@@ -1,4 +1,4 @@
-package pagination
+package gorm_paginator
 
 import (
 	"math"
