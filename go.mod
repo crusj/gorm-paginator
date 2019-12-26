@@ -1,4 +1,4 @@
-module github.com/crusj/gorm_paginator
+module github.com/crusj/gorm-paginator
 
 go 1.13
 
