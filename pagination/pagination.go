@@ -17,14 +17,14 @@ type Param struct {
 
 // Paginator 分页返回
 type Paginator struct {
-	TotalRecord int         `json:"total_record"`
+	TotalRecord int         `json:"count"`
 	TotalPage   int         `json:"total_page"`
-	Records     interface{} `json:"records"`
-	Offset      int         `json:"offset"`
-	Limit       int         `json:"limit"`
+	Records     interface{} `json:"data"`
+	Offset      int         `json:"-"`
+	Limit       int         `json:"per_page"`
 	Page        int         `json:"page"`
-	PrevPage    int         `json:"prev_page"`
-	NextPage    int         `json:"next_page"`
+	PrevPage    int         `json:"-"`
+	NextPage    int         `json:"-"`
 }
 
 // Paging 分页
